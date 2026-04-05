@@ -12,132 +12,29 @@
             --accent-gold: #ffd54f;
             --text-white: #f5f5f5;
         }
-
-        body {
-            margin: 0;
-            font-family: 'Noto Sans KR', sans-serif;
-            background-color: var(--text-white);
-            color: var(--primary-brown);
-            line-height: 1.6;
-        }
-
-        /* Hero Section */
+        body { margin: 0; font-family: 'Noto Sans KR', sans-serif; background-color: var(--text-white); color: var(--primary-brown); line-height: 1.6; }
         header {
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
                         url('https://images.unsplash.com/photo-1557431177-36141475c676?auto=format&fit=crop&q=80&w=1920');
-            background-size: cover;
-            background-position: center;
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: var(--text-white);
+            background-size: cover; background-position: center; height: 80vh;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: var(--text-white);
         }
-
-        header h1 {
-            font-size: 4rem;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-        }
-
-        header p {
-            font-size: 1.5rem;
-            background: var(--accent-gold);
-            color: var(--primary-brown);
-            padding: 5px 20px;
-            font-weight: bold;
-            border-radius: 50px;
-        }
-
-        /* Features Section */
-        .section {
-            padding: 80px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            color: var(--primary-brown);
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            text-align: center;
-            border-bottom: 5px solid var(--accent-gold);
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .feature-card i {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            display: block;
-        }
-
-        /* Code Sample Section */
-        .code-box {
-            background: #1e1e1e;
-            color: #dcdcdc;
-            padding: 30px;
-            border-radius: 15px;
-            font-family: 'Consolas', monospace;
-            overflow-x: auto;
-            border-left: 10px solid var(--accent-gold);
-        }
-
+        header h1 { font-size: 4rem; margin-bottom: 10px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        header p { font-size: 1.5rem; background: var(--accent-gold); color: var(--primary-brown); padding: 5px 20px; font-weight: bold; border-radius: 50px; }
+        .section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 50px; color: var(--primary-brown); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .feature-card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease; text-align: center; border-bottom: 5px solid var(--accent-gold); }
+        .feature-card:hover { transform: translateY(-10px); }
+        .code-box { background: #1e1e1e; color: #dcdcdc; padding: 30px; border-radius: 15px; font-family: 'Consolas', monospace; overflow-x: auto; border-left: 10px solid var(--accent-gold); }
         .code-keyword { color: #569cd6; }
         .code-string { color: #ce9178; }
-
-        /* CTA Button */
         .cta-button {
-            display: inline-block;
-            background: var(--primary-brown);
-            color: var(--accent-gold);
-            padding: 20px 40px;
-            font-size: 1.5rem;
-            font-weight: 900;
-            text-decoration: none;
-            border-radius: 50px;
-            margin-top: 30px;
-            transition: 0.3s;
-            box-shadow: 0 5px 15px rgba(62, 39, 35, 0.4);
+            display: inline-block; background: var(--primary-brown); color: var(--accent-gold); padding: 20px 40px; font-size: 1.5rem; font-weight: 900;
+            text-decoration: none; border-radius: 50px; margin-top: 30px; transition: 0.3s; box-shadow: 0 5px 15px rgba(62, 39, 35, 0.4);
         }
-
-        .cta-button:hover {
-            background: var(--accent-gold);
-            color: var(--primary-brown);
-            transform: scale(1.05);
-        }
-
-        footer {
-            background: var(--primary-brown);
-            color: var(--text-white);
-            text-align: center;
-            padding: 40px 0;
-            margin-top: 50px;
-        }
-
-        @media (max-width: 768px) {
-            header h1 { font-size: 2.5rem; }
-            header p { font-size: 1.1rem; }
-        }
+        .cta-button:hover { background: var(--accent-gold); color: var(--primary-brown); transform: scale(1.05); }
+        footer { background: var(--primary-brown); color: var(--text-white); text-align: center; padding: 40px 0; margin-top: 50px; }
     </style>
 </head>
 <body>
@@ -146,7 +43,7 @@
         <div style="font-size: 80px;">🦦</div>
         <h1>Capybara Ultimate v11</h1>
         <p>여유롭고 지리는 코딩의 시작</p>
-        <a href="#download" class="cta-button">지금 다운로드바라!</a>
+        <a href="https://github.com/sejun345/capybara_coding/releases/download/capybaracodeV10.2/capybaracodeV10.2.exe" class="cta-button">지금 다운로드바라!</a>
     </header>
 
     <div class="section">
@@ -176,21 +73,19 @@
             <div class="code-box">
                 <span class="code-keyword">&lt;카피바라~&gt;</span><br>
                 &nbsp;&nbsp;<span class="code-keyword">디자인바라~</span> <span class="code-string">"배경:#3e2723; 글자:white"</span><br>
-                &nbsp;&nbsp;<span class="code-keyword">물어바라~</span> <span class="code-string">"이름이 뭐냐바라?"</span><br>
-                &nbsp;&nbsp;<span class="code-keyword">변수바라~</span> <span class="code-string">"닉네임"</span><br>
-                &nbsp;&nbsp;<span class="code-keyword">보여바라~</span> <span class="code-string">"반갑다바라! {닉네임}님!"</span><br>
-                &nbsp;&nbsp;<span class="code-keyword">열어바라~</span> <span class="code-string">"https://github.com/donmanunbaksiu"</span><br>
+                &nbsp;&nbsp;<span class="code-keyword">루프바라~</span> <span class="code-string">"5"</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">말해바라~</span> <span class="code-string">"지린다바라! {현재시간}"</span><br>
+                &nbsp;&nbsp;<span class="code-keyword">루프바라!</span><br>
                 <span class="code-keyword">&lt;카피바라!&gt;</span>
             </div>
-            <p style="text-align: center; margin-top: 20px;">단 몇 줄만으로 복잡한 GUI 프로그램을 완성해바라!</p>
         </div>
     </div>
 
     <div class="section" id="download" style="text-align: center;">
         <h2 class="section-title">지금 시작해바라!</h2>
         <p>무료 포터블 버전으로 어디서든 코딩하세요.</p>
-        <p><strong>v11.1 엔진 업데이트 완료</strong> (루프바라~ 기능 추가)</p>
-        <a href="#" class="cta-button">Download Portable (.zip)</a>
+        <p><strong>v10.2 정식 배포 중</strong> (최신 엔진 적용 완료)</p>
+        <a href="https://github.com/sejun345/capybara_coding/releases/download/capybaracodeV10.2/capybaracodeV10.2.exe" class="cta-button">Download Portable v10.2</a>
         <br><br>
         <small style="color: #888;">By @donmanunbaksiu | Powered by CapyEngine v11</small>
     </div>
